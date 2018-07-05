@@ -1,0 +1,70 @@
+
+
+Number of CPUs: 2
+Number of PCBs: 5
+Length of simulation (in ticks): 100
+Short-term scheduling algorithm: RR
+Quantum: 3
+
+PID: 3
+Priority: 2
+Number of CPU bursts: 2
+Burst Time (in ticks): 5
+Blocked Time (in ticks): 12
+Arrival Time (in ticks since start of simulation): 5
+Departure time: 27
+Cumulative time in the New state: 0
+Cumulative time in the Ready state: 0
+Cumulative time in the Running state: 10
+Cumulative time in the Blocked state: 12
+Turnaround time: 22
+Normalized Turnaround Time: 2.20
+
+PID: 1
+Priority: 2
+Number of CPU bursts: 4
+Burst Time (in ticks): 3
+Blocked Time (in ticks): 8
+Arrival Time (in ticks since start of simulation): 2
+Departure time: 39
+Cumulative time in the New state: 0
+Cumulative time in the Ready state: 1
+Cumulative time in the Running state: 12
+Cumulative time in the Blocked state: 24
+Turnaround time: 37
+Normalized Turnaround Time: 3.08
+
+PID: 2
+Priority: 1
+Number of CPU bursts: 9
+Burst Time (in ticks): 2
+Blocked Time (in ticks): 4
+Arrival Time (in ticks since start of simulation): 5
+Departure time: 55
+Cumulative time in the New state: 0
+Cumulative time in the Ready state: 0
+Cumulative time in the Running state: 18
+Cumulative time in the Blocked state: 32
+Turnaround time: 50
+Normalized Turnaround Time: 2.78
+
+PID: 4
+Priority: 2
+Number of CPU bursts: 3
+Burst Time (in ticks): 4
+Blocked Time (in ticks): 29
+Arrival Time (in ticks since start of simulation): 8
+Departure time: 78
+Cumulative time in the New state: 0
+Cumulative time in the Ready state: 0
+Cumulative time in the Running state: 12
+Cumulative time in the Blocked state: 58
+Turnaround time: 70
+Normalized Turnaround Time: 5.83
+
+Displaying Process Statuses AND ending simulation... (Tick: 100)
+New process IDs: 
+Ready process IDs: 
+Running process IDs: 
+Blocked process IDs: 
+

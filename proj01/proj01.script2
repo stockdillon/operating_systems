@@ -1,0 +1,17 @@
+#!/bin/tcsh -f
+
+set headers=/user/cse410/Projects/project01.headers
+
+set data=/user/cse410/Projects/project01.data
+#grep ${1} $data | sort -k11nr -k5nr		#prints all player data 
+						#from specified team to std output
+
+
+foreach num ($argv)
+	echo "Script 2 output: $num Player Report"
+	grep "Player" $headers  
+	#echo $num
+	grep $num $data | sort -k11nr -k5n
+	echo "\n\n"
+end
+

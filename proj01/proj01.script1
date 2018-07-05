@@ -1,0 +1,16 @@
+#!/bin/tcsh -f
+
+clear
+
+echo "\n"
+echo "Script 1: $1 Player Report"
+echo "\n"
+
+set headers=/user/cse410/Projects/project01.headers
+grep "Player" $headers
+
+set data=/user/cse410/Projects/project01.data
+grep ${1} $data | sort -k11nr -k5n         
+
+
+

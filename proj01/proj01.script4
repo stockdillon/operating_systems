@@ -1,0 +1,28 @@
+#/bin/tcsh -f
+
+set headers=/user/cse410/Projects/project01.headers
+set data=/user/cse410/Projects/project01.data
+
+if ($#argv != 2) then
+	echo "Invalid number of arguments"
+	echo
+endif
+
+if ($1 < 0) then
+	echo "Invalid argument for number of players"
+	echo
+endif
+
+if ($2 != "AL" && $2 != "NL") then
+	echo "Invalid argument for subset of teams"
+	echo
+endif
+
+if ($#argv == 2 && $1 >= 0 && ($2 == "AL" || $2 == "NL")) then 
+	echo "Script 4 output: ${2} ${1}-Player Report"
+	echo
+	grep "Player" $headers  
+	grep $2 $data | sort -k11nr -k5n | head -$1
+	echo "\n\n"
+
+endif

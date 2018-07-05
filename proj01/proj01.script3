@@ -1,0 +1,14 @@
+#!/bin/tcsh -f
+
+set headers=/user/cse410/Projects/project01.headers
+
+set data=/user/cse410/Projects/project01.data
+#grep ${1} $data | sort -k11nr -k5nr		#prints all player data 
+						#from specified team to std output
+
+set count=${1}
+echo "Script 3 output: ${2} ${1}-Player Report"
+grep "Player" $headers  
+grep $2 $data | sort -k11nr -k5n | head -$1
+echo "\n\n"
+

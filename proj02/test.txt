@@ -1,0 +1,3 @@
+echo "this is a test \n"
+echo "hopefully it works \n"
+
